@@ -27,7 +27,7 @@ def client_task(name, file_path):
                             message = str(len(key)+6).zfill(3)+" R "+key
                         elif operation == "GET":
                             message = str(len(key)+6).zfill(3)+" G "+key
-                        # print(message)
+                        print(message)
                         client_socket.sendall(message.encode('utf-8'))
     
         final = "STOP"

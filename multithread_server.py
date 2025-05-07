@@ -51,7 +51,7 @@ def handle_client(client_socket, addr):
                     message2 = put(key, value)
             else:
                 message2 = "ERR Invalid operation"
-            #print(message2)
+            print(message2)
 
                   
 
