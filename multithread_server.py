@@ -52,12 +52,12 @@ def handle_client(client_socket, addr):
             else:
                 message2 = "ERR Invalid operation"
             print(message2)
+            response = " " + message2
+            client_socket.sendall(response.encode('utf-8'))
 
                   
 
-        message_length = str(len(message2)).zfill(3)
-        response = message_length + " " + message2
-        client_socket.sendall(response.encode('utf-8'))
+        
 
     except Exception as e:
         print(f"Error in handling client {addr}: {e}")

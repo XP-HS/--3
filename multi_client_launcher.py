@@ -34,7 +34,8 @@ def client_task(name, file_path):
         client_socket.sendall(final.encode('utf-8'))
 
         response = client_socket.recv(999).decode('utf-8')
-        print(f"{name} received: {response}")
+        print(f"{name} received")
+        print(f"{message}+{response}")
     except Exception as e:
         print(f"Error for {name}: {e}")
     finally:
