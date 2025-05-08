@@ -31,7 +31,7 @@ def client_task(name, file_path):
                                 client_socket.sendall(message.encode('utf-8'))
 
                                 response2 = client_socket.recv(999).decode('utf-8')
-                                print(response2)
+                                print(line +": "+ response2)
 
         
         
