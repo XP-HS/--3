@@ -55,15 +55,15 @@ def main():
     clients = []
     file_paths = [
         "test-workload\\client_1.txt",  
-        # "test-workload\\client_2.txt",
-        # "test-workload\\client_3.txt",
-        # "test-workload\\client_4.txt",
-        # "test-workload\\client_5.txt",
-        # "test-workload\\client_6.txt",
-        # "test-workload\\client_7.txt",
-        # "test-workload\\client_8.txt",
-        # "test-workload\\client_9.txt",
-        # "test-workload\\client_10.txt",
+        "test-workload\\client_2.txt",
+        "test-workload\\client_3.txt",
+        "test-workload\\client_4.txt",
+        "test-workload\\client_5.txt",
+        "test-workload\\client_6.txt",
+        "test-workload\\client_7.txt",
+        "test-workload\\client_8.txt",
+        "test-workload\\client_9.txt",
+        "test-workload\\client_10.txt",
     ]
     for i, file_path in enumerate(file_paths):
         t = threading.Thread(target=client_task, args=(f'client-{i+1}', file_path))
