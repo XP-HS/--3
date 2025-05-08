@@ -54,6 +54,9 @@ def handle_client(client_socket, addr):
             print(message2)
             response = " " + message2
             client_socket.sendall(response.encode('utf-8'))
+        
+
+
 
                   
 
